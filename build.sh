@@ -45,7 +45,7 @@ shift $((OPTIND-1))
 
 # Generate defconfig
 if [ ! $skip ]; then
-	scripts/kconfig/merge_config.sh -m "$DEFCONFIG" || exitGracefully
+	scripts/kconfig/merge_config.sh -m "vendor/bengal-perf_defconfig vendor/debugfs.config vendor/ext_config/moto-bengal.config vendor/ext_config/cebu-default.config" || exitGracefully
 fi
 
 # Build the kernel!
