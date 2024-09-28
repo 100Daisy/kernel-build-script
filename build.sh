@@ -45,7 +45,7 @@ shift $((OPTIND-1))
 
 # Generate defconfig
 if [ ! $skip ]; then
-	make "$DEFCONFIG" || exitGracefully
+	scripts/kconfig/merge_config.sh -m "$DEFCONFIG" || exitGracefully
 fi
 
 # Build the kernel!
