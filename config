@@ -3,5 +3,5 @@ loadVariables \
 ARCH=arm \
 CLANG_TRIPLE=aarch64-linux-gnu- \
 CROSS_COMPILE=aarch64-linux-android- \
-MAKEFLAGS="O=out -j$(nproc --all) fiji_defconfig" \
+MAKEFLAGS="O=out -j$(nproc --all)" \
 PATH="$scriptDir/build-tools/clang-r383902/bin:$scriptDir/build-tools/aarch64-linux-android-4.9/bin:$scriptDir/build-tools:$PATH"
