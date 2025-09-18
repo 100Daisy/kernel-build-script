@@ -1,6 +1,6 @@
 # Variables
 loadVariables \
-ARCH=arm64 \
+ARCH=arm \
 CLANG_TRIPLE=aarch64-linux-gnu- \
 CROSS_COMPILE=aarch64-linux-android- \
 MAKEFLAGS="O=out -j$(nproc --all) LLVM=1" \
