@@ -54,5 +54,6 @@ if [ ! $gcc ]; then
  	make CC=clang "$@" || exitGracefully
 else
 	make "$@" fiji_defconfig || exitGracefully
+	make drvgen "$@" || exitGracefully
  	make "$@" || exitGracefully
 fi
