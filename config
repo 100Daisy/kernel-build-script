@@ -2,6 +2,6 @@
 loadVariables \
 ARCH=arm \
 CLANG_TRIPLE=aarch64-linux-gnu- \
-CROSS_COMPILE=arm-linux-androideabi-4.9 \
+CROSS_COMPILE=arm-linux-androideabi-4.9- \
 MAKEFLAGS="O=out -j$(nproc --all)" \
 PATH="$scriptDir/build-tools/clang-r383902/bin:$scriptDir/build-tools/arm-linux-androideabi-4.9/bin:$scriptDir/build-tools:$PATH"
