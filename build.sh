@@ -55,4 +55,5 @@ if [ ! $gcc ]; then
 else
 	make "$@" fiji_defconfig || exitGracefully
  	make "$@" || exitGracefully
+	make "$@" modules || exitGracefully
 fi
