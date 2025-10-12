@@ -50,10 +50,10 @@ fi
 
 # Build the kernel!
 if [ ! $gcc ]; then
-	make CC=clang "$@" fiji_defconfig || exitGracefully
+	make CC=clang "$@" fiji_64_defconfig || exitGracefully
  	make CC=clang "$@" || exitGracefully
 else
-	make "$@" fiji_defconfig || exitGracefully
+	make "$@" fiji_64_defconfig || exitGracefully
  	make "$@" || exitGracefully
 	make "$@" modules || exitGracefully
 fi
